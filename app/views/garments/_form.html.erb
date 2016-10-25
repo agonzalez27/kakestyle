@@ -1,19 +1,19 @@
 <%= form_for @garment do |f| %>
   <div>
     <%= f.label :name %>
-    <%= f.text field label :name %>
+    <%= f.text_field :name %>
   </div>
   <div>
     <%= f.label :color %>
-    <%= f.text field label :color %>
+    <%= f.text_field :color %>
   </div>
   <div>
     <%= f.label :material %>
-    <%= f.text field label :material %>
+    <%= f.text_field :material %>
   </div>
   <div>
     <%= f.label :price %>
-    <%= f.number field label :price, :step => 0.25 %>
+    <%= f.number_field :price, :step => 0.25 %>
   </div>
   <div>
     <%= f.label :cool  %>

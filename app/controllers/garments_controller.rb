@@ -31,11 +31,12 @@ class GarmentsController < ApplicationController
     else
       render :edit
     end
+  end
 
   def destroy
     @garment.destroy
     redirect_to garments_path
-  end 
+  end
 
 private
   def garment_params
